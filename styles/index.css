@@ -1,0 +1,66 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  margin: 0 100px;
+}
+
+/* Header Styles */
+header {
+  height: 75px;
+  display: flex;
+}
+
+.header-left {
+  width: 50%;
+  height: 100%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+header .header-left img {
+  vertical-align: middle;
+  max-height: 25px;
+  max-width: 160px;
+}
+
+.header-right a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: hsl(273, 4%, 51%);
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+.header-right .view-plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 2px solid black;
+  height: 50%;
+  width: 35%;
+}
+
+.view-plans a {
+  color: black;
+  text-decoration: black;
+}

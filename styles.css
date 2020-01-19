@@ -1,0 +1,32 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  margin: 0 100px;
+}
+
+header {
+  height: 75px;
+  border: 1px solid black;
+}
+
+.header-left {
+  height: 100%;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+header .header-left img {
+  vertical-align: middle;
+  max-height: 25px;
+  max-width: 160px;
+}
