@@ -24,7 +24,8 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+
   width: 50%;
   height: 100%;
   display: flex;
@@ -48,6 +49,7 @@ header .header-left img {
   color: hsl(273, 4%, 51%);
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  margin-right: 20px;
 }
 
 .header-right .view-plans {
@@ -57,7 +59,11 @@ header .header-left img {
   color: black;
   border: 2px solid black;
   height: 50%;
-  width: 35%;
+  width: 30%;
+}
+
+.header-right .view-plans a {
+  margin-right: 0px;
 }
 
 .view-plans a {
