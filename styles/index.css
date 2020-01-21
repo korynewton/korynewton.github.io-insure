@@ -196,6 +196,7 @@ section .break {
   background-color: hsl(256, 26%, 20%);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -210,10 +211,11 @@ section .break {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 .find-out-more-text {
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,10 +230,13 @@ section .break {
 }
 
 .find-out-more-link {
+  margin-right: 70px;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid white;
   height: 17%;
-  width: 18%;
+  width: 20%;
+  cursor: pointer;
 }
