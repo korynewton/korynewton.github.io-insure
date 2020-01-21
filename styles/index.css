@@ -76,7 +76,6 @@ header .header-left img {
 
 main {
   height: 900px;
-  border: 1px solid black;
 }
 
 .purple-background {
@@ -160,9 +159,33 @@ main p {
 
 /* details section 1*/
 section {
-  border: 1px solid purple;
+}
+
+section h2 {
+  color: black;
+  font-family: 'DM Serif Display', serif;
+  font-size: 70px;
+  font-weight: 400;
 }
 
 section .break {
-  border-top: 1px solid rgb(192, 188, 196);
+  border-top: 1px solid hsl(273, 4%, 51%);
+}
+
+.examples {
+  margin-top: 80px;
+  display: flex;
+  flex-flow: row;
+}
+
+.examples h3 {
+  margin: 20px 0;
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+}
+
+.examples p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: hsl(273, 4%, 51%);
 }
