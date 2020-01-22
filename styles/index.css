@@ -1,5 +1,8 @@
+html {
+  font-size: 62.5%;
+}
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
@@ -128,7 +131,7 @@ main {
 main h2 {
   color: hsl(0, 0%, 98%);
   font-family: 'DM Serif Display', serif;
-  font-size: 70px;
+  font-size: 7rem;
   font-weight: 400;
 }
 
@@ -162,7 +165,7 @@ main p {
 section h2 {
   color: black;
   font-family: 'DM Serif Display', serif;
-  font-size: 70px;
+  font-size: 7rem;
   font-weight: 400;
 }
 
@@ -179,7 +182,7 @@ section .break {
 .examples h3 {
   margin: 20px 0;
   font-family: 'DM Serif Display', serif;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .examples p {
@@ -204,7 +207,7 @@ section .break {
 .find-out h2 {
   color: hsl(0, 0%, 98%);
   font-family: 'DM Serif Display', serif;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 400;
 }
 
@@ -301,7 +304,7 @@ footer .footer-squigly {
   text-transform: uppercase;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .bottom a {
@@ -311,7 +314,7 @@ footer .footer-squigly {
   text-transform: uppercase;
   font-family: 'Karla', sans-serif;
   font-weight: 800;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-bottom: 18px;
 }
 
