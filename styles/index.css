@@ -10,7 +10,7 @@ html {
 }
 
 .container {
-  margin: 0 100px;
+  margin: 0 165px;
 }
 
 /* Header Styles */
@@ -106,6 +106,7 @@ main {
 
 .main-container {
   display: flex;
+  justify-content: space-between;
   height: 650px;
 }
 
