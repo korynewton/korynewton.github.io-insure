@@ -65,6 +65,7 @@ header .header-left img {
   cursor: pointer;
 }
 
+
 .header-right .view-plans {
   display: flex;
   align-items: center;
@@ -75,8 +76,11 @@ header .header-left img {
   width: 26%;
 }
 
-.header-right .view-plans a {
-  margin-right: 0px;
+.view-plans:hover{
+  background-color:hsl(270, 9%, 17%)
+}
+.view-plans:hover a{
+  color: white;
 }
 
 .view-plans a {
@@ -88,7 +92,6 @@ header .header-left img {
 
 main {
   height: 900px;
-  /* z-index: 0; */
 }
 
 .purple-background {
@@ -111,6 +114,7 @@ main {
   position: absolute;
   left: 0;
   top: 93vh;
+  z-index: 1;
 }
 
 .main-container {
@@ -118,10 +122,14 @@ main {
   justify-content: space-between;
   height: 650px;
   padding-top: 5px;
+  position: relative;
 }
 
+
 .main-left {
-  width: 50%;
+  width: 48%;
+  position: relative;
+
 }
 
 .break {
@@ -131,12 +139,13 @@ main {
 }
 
 .main-right {
-  width: 540px;
+  width: 48%;
 }
 
 .main-right img {
   width: 100%;
-  height: 100%;
+  height: auto; 
+  min-width: 500px;
 }
 
 main h2 {
@@ -156,12 +165,13 @@ main p {
   line-height: 2.6rem;
 }
 
+
 .main-view-plans {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  border: 2px solid hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 98%);
   width: 145px;
   height: 35px;
 }
@@ -172,7 +182,16 @@ main p {
   text-transform: uppercase;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  font-size: 1.4rem;
 }
+
+
+.main-left .main-view-plans:hover{
+  background-color: black;
+} 
+
+
+
 
 /* details section 1*/
 
@@ -214,7 +233,7 @@ section .break {
 
 /* section 2 find out more */
 .find-out {
-  margin-top: 150px;
+  margin-top: 130px;
   widows: 100%;
   height: 250px;
   background-color: hsl(256, 26%, 20%);
@@ -258,7 +277,7 @@ section .break {
 
 .find-out-more-link {
   margin-right: 80px;
-  /* z-index: 0; */
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,6 +285,13 @@ section .break {
   height: 17%;
   width: 14%;
   cursor: pointer;
+}
+
+.find-out-more-link:hover{
+  background-color: white;
+}
+.find-out-more-link:hover a{
+  color: hsl(270, 9%, 17%);
 }
 
 .find-out-more-link a {
@@ -291,8 +317,8 @@ footer .footer-squigly {
 }
 
 .socials {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgb(222, 222, 222);
   margin-top: 20px;
   display: flex;
@@ -307,6 +333,11 @@ footer .footer-squigly {
 .social-icons img {
   margin: 5px;
 }
+
+.social-icons img:hover{
+  cursor: pointer;
+}
+
 
 .additional-links {
   display: flex;
