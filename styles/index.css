@@ -186,6 +186,7 @@ section .break {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   color: hsl(273, 4%, 51%);
+  line-height: 24px;
 }
 
 /* section 2 find out more */
@@ -239,4 +240,82 @@ section .break {
   height: 17%;
   width: 20%;
   cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  margin-top: 140px;
+  height: 400px;
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  position: relative;
+  z-index: 0;
+}
+
+footer .footer-squigly {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.socials {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(222, 222, 222);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials .footer-logo {
+  max-height: 18px;
+}
+
+.social-icons img {
+  margin: 5px;
+}
+
+.additional-links {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.single-row {
+  display: flex;
+  flex-flow: column;
+}
+
+.single-row .top {
+  margin-bottom: 40px;
+}
+
+.single-row a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(135, 133, 138);
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.bottom a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(114, 111, 128);
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: column;
 }
