@@ -15,14 +15,19 @@ html {
 
 /* Header Styles */
 header {
-  height: 75px;
   position: relative;
-  z-index: 100;
+  background-color: white;
+  height: 75px;
 }
 
 .header-container {
+  margin: 3px 165px;
   display: flex;
   height: 100%;
+  width:100vw
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
 
 .header-left {
@@ -83,11 +88,11 @@ header .header-left img {
 
 main {
   height: 900px;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .purple-background {
-  /* z-index: -1; */
+  z-index: -1;
   height: 504px;
   width: 100%;
   background-color: hsl(256, 26%, 20%);
@@ -99,6 +104,7 @@ main {
   position: absolute;
   right: 0;
   top: -17vh;
+  z-index: 1;
 }
 
 .squigly-middle-left {
@@ -198,8 +204,12 @@ section .break {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   color: hsl(273, 4%, 51%);
-  line-height: 24px;
+  line-height: 2.5rem;
   font-size: 1.6rem;
+}
+
+.examples div {
+  padding: 5px;
 }
 
 /* section 2 find out more */
@@ -225,7 +235,7 @@ section .break {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  /* z-index: 0; */
 }
 
 .find-out-more-text {
@@ -248,7 +258,7 @@ section .break {
 
 .find-out-more-link {
   margin-right: 80px;
-  z-index: 2;
+  /* z-index: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
