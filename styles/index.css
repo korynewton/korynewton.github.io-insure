@@ -16,6 +16,8 @@ html {
 /* Header Styles */
 header {
   height: 75px;
+  position: relative;
+  z-index: 100;
 }
 
 .header-container {
@@ -81,11 +83,12 @@ header .header-left img {
 
 main {
   height: 900px;
+  z-index: 0;
 }
 
 .purple-background {
-  z-index: -1;
-  height: 600px;
+  /* z-index: -1; */
+  height: 504px;
   width: 100%;
   background-color: hsl(256, 26%, 20%);
   position: relative;
@@ -93,27 +96,26 @@ main {
 }
 
 .squigly-top-right {
-  z-index: 2;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -17vh;
 }
 
 .squigly-middle-left {
-  z-index: 2;
   position: absolute;
   left: 0;
-  top: 54vh;
+  top: 93vh;
 }
 
 .main-container {
   display: flex;
   justify-content: space-between;
   height: 650px;
+  padding-top: 5px;
 }
 
 .main-left {
-  width: 570px;
+  width: 50%;
 }
 
 .break {
@@ -136,13 +138,16 @@ main h2 {
   font-family: 'DM Serif Display', serif;
   font-size: 7rem;
   font-weight: 400;
+  margin-top: -20px;
 }
 
 main p {
-  margin-top: 30px;
+  margin-top: 20px;
   color: rgb(192, 188, 196);
   font-family: 'Karla', sans-serif;
   font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
 }
 
 .main-view-plans {
@@ -170,6 +175,7 @@ section h2 {
   font-family: 'DM Serif Display', serif;
   font-size: 7rem;
   font-weight: 400;
+  margin-top: -10px;
 }
 
 section .break {
@@ -177,13 +183,13 @@ section .break {
 }
 
 .examples {
-  margin-top: 80px;
+  margin-top: 90px;
   display: flex;
   flex-flow: row;
 }
 
 .examples h3 {
-  margin: 20px 0;
+  margin: 40px 0;
   font-family: 'DM Serif Display', serif;
   font-size: 2.5rem;
 }
@@ -193,6 +199,7 @@ section .break {
   font-weight: 400;
   color: hsl(273, 4%, 51%);
   line-height: 24px;
+  font-size: 1.6rem;
 }
 
 /* section 2 find out more */
@@ -226,7 +233,10 @@ section .break {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 50px;
+}
+.find-out-more-text h2 {
+  font-size: 5.6rem;
 }
 
 .find-out a {
@@ -237,15 +247,19 @@ section .break {
 }
 
 .find-out-more-link {
-  margin-right: 70px;
+  margin-right: 80px;
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid white;
   height: 17%;
-  width: 20%;
+  width: 14%;
   cursor: pointer;
+}
+
+.find-out-more-link a {
+  font-size: 1.5rem;
 }
 
 /* footer */
