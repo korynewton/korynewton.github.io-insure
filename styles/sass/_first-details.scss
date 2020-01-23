@@ -1,1 +1,40 @@
 @import './variables.scss';
+
+section {
+  .break {
+    margin-top: 31rem;
+    border: 0.5px solid lightgray;
+    width: 14%;
+  }
+
+  h2 {
+    margin-top: 5rem;
+    font-family: $serif-font;
+    font-size: 7rem;
+  }
+
+  .examples {
+    margin-top: 10rem;
+    display: flex;
+
+    .detail-col {
+      &:first-child {
+        padding-right: 6rem;
+      }
+
+      h3 {
+        margin-top: 3rem;
+        font-family: $serif-font;
+        font-size: 2.7rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        font-family: $karla-font;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        color: $dark-grayish-violet;
+      }
+    }
+  }
+}
