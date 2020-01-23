@@ -17,6 +17,7 @@ html {
 header {
   position: relative;
   background-color: white;
+  z-index: 5;
   height: 75px;
 }
 
@@ -25,9 +26,9 @@ header {
   display: flex;
   height: 100%;
   width:100vw
-  position: relative;
-  z-index: 2;
-  background-color: white;
+  /* position: relative; */
+  /* background-color: white; */
+  border: 1px solid blue;
 }
 
 .header-left {
@@ -95,7 +96,6 @@ main {
 }
 
 .purple-background {
-  z-index: -1;
   height: 504px;
   width: 100%;
   background-color: hsl(256, 26%, 20%);
@@ -107,14 +107,12 @@ main {
   position: absolute;
   right: 0;
   top: -17vh;
-  z-index: 1;
 }
 
 .squigly-middle-left {
   position: absolute;
   left: 0;
   top: 93vh;
-  z-index: 1;
 }
 
 .main-container {
@@ -174,6 +172,7 @@ main p {
   border: 1px solid hsl(0, 0%, 98%);
   width: 145px;
   height: 35px;
+  border: 1px solid white;
 }
 
 .main-view-plans a {
@@ -187,8 +186,14 @@ main p {
 
 
 .main-left .main-view-plans:hover{
-  background-color: black;
+  background-color:white;
+  cursor: pointer;
+  border: 1px solid white;
 } 
+
+.main-left .main-view-plans:hover a {
+  color: hsl(256, 26%, 20%);
+}
 
 
 
@@ -254,7 +259,6 @@ section .break {
   position: absolute;
   top: 0;
   right: 0;
-  /* z-index: 0; */
 }
 
 .find-out-more-text {
