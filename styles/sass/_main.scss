@@ -39,7 +39,6 @@ main {
   max-width: 77%;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid red;
   overflow: visible;
   height: 50rem;
 
@@ -50,6 +49,10 @@ main {
   }
 
   .main-left {
+    .break {
+      border: 0.5px solid lightgray;
+      width: 26%;
+    }
     h2 {
       font-family: $serif-font;
       font-size: 6rem;
@@ -87,14 +90,6 @@ main {
         font-size: 1.5rem;
         text-transform: uppercase;
       }
-    }
-  }
-
-  .main-right {
-    img {
-      //   display: block;
-      //   width: 100%;
-      //   height: auto;
     }
   }
 }
