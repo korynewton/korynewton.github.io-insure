@@ -1,0 +1,100 @@
+@import './_variables.scss';
+
+main {
+  position: relative;
+  padding: 10rem 0 0;
+  color: #fff;
+  background-color: $dark-violet;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    overflow-x: hidden;
+    width: auto;
+    height: auto;
+  }
+
+  &::before {
+    content: url('../../images/bg-pattern-intro-right-desktop.svg');
+    top: -14%;
+    right: 0;
+    z-index: 11;
+    width: 35%;
+    text-align: right;
+  }
+
+  &::after {
+    content: url('../../images/bg-pattern-intro-left-desktop.svg');
+    bottom: -97%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 9;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 77%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid red;
+  overflow: visible;
+  height: 50rem;
+
+  .main-left,
+  .main-right {
+    position: relative;
+    z-index: 10;
+  }
+
+  .main-left {
+    h2 {
+      font-family: $serif-font;
+      font-size: 6rem;
+      margin-top: 6.5rem;
+    }
+
+    p {
+      margin-top: 3rem;
+      margin-right: 2rem;
+      font-family: $karla-font;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      opacity: 0.8;
+    }
+
+    .main-view-plans {
+      margin-top: 2rem;
+      padding: 1rem 3rem;
+      background-color: transparent;
+      border: 2px solid white;
+      width: 15%;
+
+      &:hover {
+        background-color: white;
+      }
+
+      &:hover a {
+        color: $dark-violet;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: $karla-font;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .main-right {
+    img {
+      //   display: block;
+      //   width: 100%;
+      //   height: auto;
+    }
+  }
+}

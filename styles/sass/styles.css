@@ -131,7 +131,7 @@ table {
 header {
   position: relative;
   background-color: #fafafa;
-  z-index: 5;
+  z-index: 50;
 }
 
 .header-container {
@@ -196,17 +196,110 @@ header {
   font-weight: 700;
 }
 
+main {
+  position: relative;
+  padding: 10rem 0 0;
+  color: #fff;
+  background-color: #2d2640;
+}
+
+main::before, main::after {
+  content: '';
+  position: absolute;
+  overflow-x: hidden;
+  width: auto;
+  height: auto;
+}
+
+main::before {
+  content: url("../../images/bg-pattern-intro-right-desktop.svg");
+  top: -14%;
+  right: 0;
+  z-index: 11;
+  width: 35%;
+  text-align: right;
+}
+
+main::after {
+  content: url("../../images/bg-pattern-intro-left-desktop.svg");
+  bottom: -97%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  z-index: 9;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 77%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid red;
+  overflow: visible;
+  height: 50rem;
+}
+
+.main-container .main-left,
+.main-container .main-right {
+  position: relative;
+  z-index: 10;
+}
+
+.main-container .main-left h2 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 6rem;
+  margin-top: 6.5rem;
+}
+
+.main-container .main-left p {
+  margin-top: 3rem;
+  margin-right: 2rem;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  opacity: 0.8;
+}
+
+.main-container .main-left .main-view-plans {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 15%;
+}
+
+.main-container .main-left .main-view-plans:hover {
+  background-color: white;
+}
+
+.main-container .main-left .main-view-plans:hover a {
+  color: #2d2640;
+}
+
+.main-container .main-left .main-view-plans a {
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 .container {
   max-width: 77%;
   margin-right: auto;
   margin-left: auto;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=styles.css.map */
