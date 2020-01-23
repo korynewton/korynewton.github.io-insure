@@ -1,0 +1,16 @@
+@import './_reset.scss';
+@import './_variables.scss';
+@import './_header.scss';
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 77%;
+  margin-right: auto;
+  margin-left: auto;
+  // border: 1px solid red;
+}

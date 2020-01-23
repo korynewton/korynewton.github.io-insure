@@ -16,8 +16,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/sass/styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap"
       rel="stylesheet"
@@ -28,18 +28,15 @@
   <body>
     <!-- header -->
     <header>
-      <div class="header-container">
+      <div class="container header-container">
         <div class="header-left">
-          <span class="helper"></span>
           <img src="images/logo.svg" alt="Insure" />
         </div>
-        <div class="header-right">
-          <a href="#">How we work</a>
-          <a href="#">Blog</a>
-          <a href="#">Account</a>
-          <div class="view-plans">
-            <a href="#">View plans</a>
-          </div>
+        <ul class="header-right">
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Account</a></li>
+          <li class="view-plans"><a href="#">View plans</a></li>
         </div>
       </div>
     </header>
