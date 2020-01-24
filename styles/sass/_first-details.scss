@@ -17,6 +17,9 @@ section {
     margin-top: 10rem;
     display: flex;
 
+    .middle {
+      padding-right: 2rem;
+    }
     .detail-col {
       &:first-child {
         padding-right: 6rem;

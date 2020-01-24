@@ -312,6 +312,10 @@ section .examples {
   display: flex;
 }
 
+section .examples .middle {
+  padding-right: 2rem;
+}
+
 section .examples .detail-col:first-child {
   padding-right: 6rem;
 }
