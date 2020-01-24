@@ -299,7 +299,7 @@ section .break {
   width: 14%;
 }
 
-section h2 {
+section .different {
   margin-top: 5rem;
   font-family: "DM Serif Display", sans-serif;
   font-size: 7rem;
@@ -332,6 +332,58 @@ section .examples .detail-col p {
   font-size: 1.5rem;
   line-height: 3rem;
   color: #837d87;
+}
+
+section .find-out {
+  margin-top: 15rem;
+  color: #fff;
+  background-color: #2d2640;
+  background-image: url("../../images/bg-pattern-how-we-work-desktop.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-size: auto 100%;
+  height: 25rem;
+}
+
+section .find-out .find-out-text {
+  margin-left: 8rem;
+  max-width: 65%;
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+section .find-out .button {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 10%;
+  margin-right: 8rem;
+}
+
+section .find-out .button:hover {
+  background-color: white;
+}
+
+section .find-out .button:hover a {
+  color: #2d2640;
+}
+
+section .find-out .button a {
+  text-decoration: none;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 html {
