@@ -3,18 +3,17 @@
 @import './_header.scss';
 @import './_main.scss';
 @import './first-details.scss';
-@import './find-out-more';
+@import './find-out-more.scss';
+@import './_footer.scss';
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   overflow-x: hidden;
-  // overflow-y: hidden;
 }
 
 .container {
   max-width: 77%;
   margin-right: auto;
   margin-left: auto;
-  // border: 1px solid red;
 }

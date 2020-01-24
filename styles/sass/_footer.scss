@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+footer {
+  margin-top: 15rem;
+  background-image: url(../../images/bg-pattern-footer-desktop.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: $v-light-gray;
+
+  .socials {
+    padding-top: 2rem;
+    height: 10rem;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social-icons {
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .additional-links {
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+
+    .single-row {
+      padding-top: 5rem;
+      width: 23%;
+      .top {
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $karla-font;
+          color: hsl(273, 4%, 51%);
+          font-size: 1.5rem;
+          font-weight: $font-weight-body;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.2rem;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $karla-font;
+          color: $v-dark-violet;
+          font-size: 1.5rem;
+          font-weight: $font-weight-body;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

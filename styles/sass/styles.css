@@ -386,6 +386,79 @@ section .find-out .button a {
   text-transform: uppercase;
 }
 
+footer {
+  margin-top: 15rem;
+  background-image: url(../../images/bg-pattern-footer-desktop.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+}
+
+footer .socials {
+  padding-top: 2rem;
+  height: 10rem;
+  border-bottom: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .socials .social-icons img {
+  margin-left: 1rem;
+}
+
+footer .additional-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 25rem;
+}
+
+footer .additional-links .single-row {
+  padding-top: 5rem;
+  width: 23%;
+}
+
+footer .additional-links .single-row .top a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  color: #837d87;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer .additional-links .single-row .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3.2rem;
+}
+
+footer .additional-links .single-row .bottom a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  color: #2b272f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
