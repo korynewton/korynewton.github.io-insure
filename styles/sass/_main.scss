@@ -6,6 +6,12 @@ main {
   color: #fff;
   background-color: $dark-violet;
 
+  @media screen and (max-width: $mobile) {
+    // margin-top: 10rem;
+    background-color: white;
+    padding: 0;
+  }
+
   &::before,
   &::after {
     content: '';
@@ -22,6 +28,10 @@ main {
     z-index: 11;
     width: 35%;
     text-align: right;
+
+    @media screen and (max-width: $mobile) {
+      //    new content
+    }
   }
 
   &::after {
@@ -30,6 +40,9 @@ main {
     transform: translateY(-50%);
     left: 0;
     z-index: 9;
+    @media screen and (max-width: $mobile) {
+      //    new content
+    }
   }
 }
 
@@ -42,21 +55,45 @@ main {
   overflow: visible;
   height: 50rem;
 
+  @media screen and (max-width: $mobile) {
+    flex-direction: column-reverse;
+    margin-top: 30rem;
+  }
+
   .main-left,
   .main-right {
     position: relative;
     z-index: 10;
   }
 
+  .main-right {
+    @media screen and (max-width: $mobile) {
+      margin-left: auto;
+      marign-right: auto;
+    }
+  }
+
   .main-left {
+    @media screen and (max-width: $mobile) {
+      background-color: $dark-violet;
+    }
+
     .break {
       border: 0.5px solid lightgray;
       width: 26%;
+
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
     }
     h2 {
       font-family: $serif-font;
       font-size: 6rem;
       margin-top: 6.5rem;
+
+      @media screen and (max-width: $mobile) {
+        font-size: 4rem;
+      }
     }
 
     p {

@@ -1,6 +1,10 @@
 @import './variables.scss';
 
 section {
+  .details-container {
+    border: 1px solid blue;
+  }
+
   .break {
     margin-top: 31rem;
     border: 0.5px solid lightgray;
@@ -16,6 +20,11 @@ section {
   .examples {
     margin-top: 10rem;
     display: flex;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
 
     .middle {
       padding-right: 2rem;

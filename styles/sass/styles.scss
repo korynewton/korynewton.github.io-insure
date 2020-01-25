@@ -16,4 +16,9 @@ html {
   max-width: 77%;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (max-width: $mobile) {
+    max-width: 95%;
+    border: 1px solid red;
+  }
 }
