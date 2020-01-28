@@ -1,0 +1,17 @@
+@import './_variables.scss';
+
+header {
+  background-color: $v-light-gray;
+  width: 100vw;
+}
+.header {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+}

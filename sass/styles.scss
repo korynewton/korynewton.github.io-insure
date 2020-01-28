@@ -1,0 +1,13 @@
+@import './_reset.scss';
+@import './_header.scss';
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
