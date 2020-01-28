@@ -11,7 +11,45 @@ header {
   align-items: center;
   height: 7rem;
 
-  .hamburger:hover {
-    cursor: pointer;
+  .hamburger {
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  .options {
+    display: none;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-family: $karla-font;
+      font-weight: $font-weight-body-heavy;
+      letter-spacing: 0.1rem;
+      font-size: 1.4rem;
+      height: 100%;
+
+      li {
+        margin-left: 3rem;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        width: 14.1rem;
+        height: 3.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
   }
 }
