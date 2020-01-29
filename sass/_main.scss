@@ -1,0 +1,97 @@
+@import './variables.scss';
+
+main {
+  .main-photo {
+    img {
+      display: block;
+    }
+  }
+  .main-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50rem;
+    width: 100%;
+    background-color: #2d2640;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      overflow-x: hidden;
+      width: auto;
+      height: auto;
+    }
+
+    &::after {
+      content: url('../../images/bg-pattern-intro-right-mobile.svg');
+      top: 69%;
+      right: 0;
+      z-index: 1;
+      text-align: right;
+    }
+
+    &::before {
+      content: url('../../images/bg-pattern-intro-left-mobile.svg');
+      top: 0;
+      text-align: left;
+      left: 0;
+      z-index: 1;
+    }
+
+    h2 {
+      font-family: 'DM Serif Text', serif;
+      font-size: 4.5rem;
+      text-align: center;
+      line-height: 5rem;
+    }
+
+    p {
+      text-align: center;
+      font-family: 'Karla', sans-serif;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      opacity: 0.8;
+      margin: 0 auto;
+    }
+
+    .description-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 63%;
+
+      .button {
+        display: flex;
+        border: 2px solid white;
+        width: 14.1rem;
+        height: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: white;
+          cursor: pointer;
+
+          a {
+            color: #2d2640;
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          font-family: 'Karla', sans-serif;
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}

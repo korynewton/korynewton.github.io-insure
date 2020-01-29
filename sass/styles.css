@@ -144,7 +144,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 7rem;
+  height: 7.5rem;
 }
 
 .header .hamburger:hover {
@@ -197,6 +197,119 @@ header {
     text-decoration: none;
     color: black;
   }
+}
+
+main .main-photo img {
+  display: block;
+}
+
+main .main-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 50rem;
+  width: 100%;
+  background-color: #2d2640;
+  position: relative;
+}
+
+main .main-description::before, main .main-description::after {
+  content: '';
+  position: absolute;
+  overflow-x: hidden;
+  width: auto;
+  height: auto;
+}
+
+main .main-description::after {
+  content: url("../../images/bg-pattern-intro-right-mobile.svg");
+  top: 69%;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+
+main .main-description::before {
+  content: url("../../images/bg-pattern-intro-left-mobile.svg");
+  top: 0;
+  text-align: left;
+  left: 0;
+  z-index: 1;
+}
+
+main .main-description h2 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+main .main-description p {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+
+main .main-description .description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 63%;
+}
+
+main .main-description .description-container .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid white;
+  width: 14.1rem;
+  height: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .main-description .description-container .button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+main .main-description .description-container .button:hover a {
+  color: #2d2640;
+}
+
+main .main-description .description-container .button a {
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }
 
 html {
