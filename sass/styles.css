@@ -312,6 +312,69 @@ main .main-description .description-container .button a {
   letter-spacing: 0.1rem;
 }
 
+section {
+  margin: 14rem 0;
+}
+
+section .different-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .different-container .break {
+  border-top: 1px solid #837d87;
+  width: 15rem;
+  height: 4rem;
+}
+
+section .different-container h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 4.5rem;
+}
+
+section .different-container .example {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .different-container .example h4 {
+  margin-top: 4rem;
+  font-family: "DM Serif Text", serif;
+  font-size: 2.8rem;
+}
+
+section .different-container .example p {
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  color: #837d87;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
