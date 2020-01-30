@@ -151,10 +151,6 @@ header {
   cursor: pointer;
 }
 
-.header .hamburger .hidden {
-  display: none;
-}
-
 @media screen and (min-width: 800px) {
   .header .hamburger {
     display: none;
@@ -204,7 +200,6 @@ header {
 }
 
 main .dropdown {
-  display: none;
   height: 60rem;
   background-color: #2b272f;
   position: relative;
@@ -642,7 +637,7 @@ html {
   }
 }
 
-.active {
-  display: block;
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
