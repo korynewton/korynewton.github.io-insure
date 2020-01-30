@@ -151,7 +151,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .header .hamburger {
     display: none;
   }
@@ -161,7 +161,7 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .header .options {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,6 +263,7 @@ main .dropdown .dropdown-options .button:hover a {
 
 main .dropdown img {
   position: absolute;
+  width: 100%;
   bottom: 0;
 }
 
