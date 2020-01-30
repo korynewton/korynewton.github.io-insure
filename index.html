@@ -27,7 +27,18 @@
           <img src="./images/logo.svg" alt="Insure Logo" />
         </div>
         <div class="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="Dropdown Menu" />
+          <img
+            onclick="hamburgerHelper()"
+            class="open"
+            src="./images/icon-hamburger.svg"
+            alt="Dropdown Menu"
+          />
+          <img
+            class="close hidden"
+            onclick="hamburgerHelper()"
+            src="./images/icon-close.svg"
+            alt="Dropdown Menu"
+          />
         </div>
         <ul class="options">
           <li><a href="#">How We Work</a></li>
@@ -43,6 +54,19 @@
     </header>
     <!-- main -->
     <main>
+      <div class="dropdown">
+        <ul class="dropdown-options container">
+          <li><a href="#">How We Work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Account</a></li>
+          <li>
+            <div class="button">
+              <a href="#">View Plans</a>
+            </div>
+          </li>
+        </ul>
+        <img src="./images/bg-pattern-mobile-nav.svg" />
+      </div>
       <div class="main-photo">
         <img
           src="./images/image-intro-mobile.jpg"
@@ -165,4 +189,5 @@
       </div>
     </footer>
   </body>
+  <script src="./headerScript.js"></script>
 </html>
