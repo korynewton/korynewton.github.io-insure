@@ -1,0 +1,56 @@
+@import './_variables.scss';
+
+.find-out-more-container {
+  background-color: $dark-violet;
+  height: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: url('../../images/bg-pattern-how-we-work-mobile.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    text-align: right;
+  }
+
+  h2 {
+    font-family: $serif-font;
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .button {
+    border: 2px solid white;
+    height: 3.7rem;
+    width: 15.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: white;
+      cursor: pointer;
+
+      a {
+        color: #2d2640;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      font-family: 'Karla', sans-serif;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

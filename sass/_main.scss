@@ -1,0 +1,242 @@
+@import './variables.scss';
+
+main {
+  @media screen and (min-width: 1000px) {
+    background-color: $dark-violet;
+    height: 60rem;
+    overflow-y: visible;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: url('../../images/bg-pattern-intro-right-desktop.svg');
+      position: absolute;
+      top: -14%;
+      right: 0;
+      z-index: 0;
+      text-align: right;
+    }
+  }
+  .main-container {
+    @media screen and (min-width: 1000px) {
+      padding-top: 10.5rem;
+      max-width: 77%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+  .dropdown {
+    height: 60rem;
+    background-color: $v-dark-violet;
+    position: relative;
+
+    .dropdown-options {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      li {
+        width: 100%;
+        text-align: center;
+      }
+
+      a {
+        font-family: $karla-font;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+      }
+
+      .button {
+        display: flex;
+        border: 2px solid white;
+        width: 100%;
+        height: 5rem;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: white;
+          cursor: pointer;
+
+          a {
+            color: #2d2640;
+          }
+        }
+      }
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  .main-photo {
+    img {
+      display: block;
+      @media screen and (min-width: 1000px) {
+        max-width: 540px;
+        height: auto;
+      }
+    }
+  }
+  .main-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 46rem;
+    width: 100%;
+    background-color: $dark-violet;
+    position: relative;
+
+    @media screen and (min-width: 1000px) {
+      background-color: transparent;
+    }
+
+    .break {
+      @media screen and (min-width: 1000px) {
+        border-top: 2px solid $dark-grayish-violet;
+        width: 15rem;
+        height: 6rem;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      overflow-x: hidden;
+      width: auto;
+      height: auto;
+    }
+
+    &::after {
+      content: url('../../images/bg-pattern-intro-right-mobile.svg');
+      top: 69%;
+      right: 0;
+      z-index: 1;
+      text-align: right;
+    }
+
+    &::before {
+      content: url('../../images/bg-pattern-intro-left-mobile.svg');
+      top: 0;
+      text-align: left;
+      left: 0;
+      z-index: 1;
+    }
+
+    &::before,
+    &::after {
+      @media screen and (min-width: 1000px) {
+        content: url('');
+      }
+    }
+
+    .description-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      height: 63%;
+      position: relative;
+      overflow-x: visible;
+      @media screen and (min-width: 1000px) {
+        width: 54rem;
+        justify-content: unset;
+        align-items: unset;
+        height: 100%;
+        width: 100%;
+
+        &::after {
+          content: url('../../images/bg-pattern-intro-left-desktop.svg');
+          position: absolute;
+          bottom: -80%;
+          z-index: 0;
+          left: -30%;
+        }
+      }
+
+      h2 {
+        font-family: 'DM Serif Text', serif;
+        font-size: 4.5rem;
+        text-align: center;
+        line-height: 5rem;
+
+        @media screen and (min-width: 1000px) {
+          font-size: 7.5rem;
+          text-align: unset;
+          line-height: 60px;
+          letter-spacing: 2px;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        opacity: 0.8;
+        margin: 0 auto;
+        @media screen and (min-width: 1000px) {
+          text-align: unset;
+          margin-top: 4rem;
+          padding-right: 3rem;
+        }
+      }
+
+      .button {
+        display: flex;
+        border: 2px solid white;
+        width: 14.1rem;
+        height: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 1000px) {
+          margin: 0;
+          margin-top: 3rem;
+          height: 3.5rem;
+          position: relative;
+          z-index: 1;
+        }
+
+        &:hover {
+          background-color: white;
+          cursor: pointer;
+
+          a {
+            color: #2d2640;
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          font-family: 'Karla', sans-serif;
+          text-decoration: none;
+          color: white;
+          font-size: 1.5rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dropdown {
+    display: none;
+  }
+}
