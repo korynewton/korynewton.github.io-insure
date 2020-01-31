@@ -1,0 +1,22 @@
+{
+  "name": "insure-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korynewton/insure-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korynewton/insure-landing-page/issues"
+  },
+  "homepage": "https://github.com/korynewton/insure-landing-page#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
