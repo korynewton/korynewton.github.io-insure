@@ -131,6 +131,8 @@ table {
 header {
   background-color: #fafafa;
   width: 100vw;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -207,6 +209,43 @@ header {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  main {
+    background-color: #2d2640;
+    height: 60rem;
+    overflow-y: visible;
+    position: relative;
+    z-index: 0;
+  }
+  main::before {
+    content: url("../../images/bg-pattern-intro-right-desktop.svg");
+    position: absolute;
+    top: -14%;
+    right: 0;
+    z-index: 0;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-container {
+    padding-top: 10.5rem;
+    max-width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 main .dropdown {
   height: 60rem;
   background-color: #2b272f;
@@ -236,11 +275,11 @@ main .dropdown .dropdown-options li {
 }
 
 main .dropdown .dropdown-options a {
-  color: white;
   font-family: "Karla", sans-serif;
   font-size: 2.5rem;
   text-transform: uppercase;
   text-decoration: none;
+  color: white;
 }
 
 main .dropdown .dropdown-options .button {
@@ -279,6 +318,13 @@ main .main-photo img {
   display: block;
 }
 
+@media screen and (min-width: 1000px) {
+  main .main-photo img {
+    max-width: 540px;
+    height: auto;
+  }
+}
+
 main .main-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,6 +340,20 @@ main .main-description {
   width: 100%;
   background-color: #2d2640;
   position: relative;
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description {
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description .break {
+    border-top: 2px solid #837d87;
+    width: 15rem;
+    height: 6rem;
+  }
 }
 
 main .main-description::before, main .main-description::after {
@@ -320,20 +380,10 @@ main .main-description::before {
   z-index: 1;
 }
 
-main .main-description h2 {
-  font-family: 'DM Serif Text', serif;
-  font-size: 4.5rem;
-  text-align: center;
-  line-height: 5rem;
-}
-
-main .main-description p {
-  text-align: center;
-  font-family: 'Karla', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  opacity: 0.8;
-  margin: 0 auto;
+@media screen and (min-width: 1000px) {
+  main .main-description::before, main .main-description::after {
+    content: url("");
+  }
 }
 
 main .main-description .description-container {
@@ -351,6 +401,62 @@ main .main-description .description-container {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 63%;
+  position: relative;
+  overflow-x: visible;
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description .description-container {
+    width: 54rem;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    height: 100%;
+    width: 100%;
+  }
+  main .main-description .description-container::after {
+    content: url("../../images/bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    bottom: -80%;
+    z-index: 0;
+    left: -30%;
+  }
+}
+
+main .main-description .description-container h2 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 4.5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description .description-container h2 {
+    font-size: 7.5rem;
+    text-align: unset;
+    line-height: 60px;
+    letter-spacing: 2px;
+  }
+}
+
+main .main-description .description-container p {
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description .description-container p {
+    text-align: unset;
+    margin-top: 4rem;
+    padding-right: 3rem;
+  }
 }
 
 main .main-description .description-container .button {
@@ -368,6 +474,16 @@ main .main-description .description-container .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+  main .main-description .description-container .button {
+    margin: 0;
+    margin-top: 3rem;
+    height: 3.5rem;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 main .main-description .description-container .button:hover {
