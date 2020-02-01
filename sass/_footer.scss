@@ -5,6 +5,9 @@ footer {
   width: 100vw;
   position: relative;
   padding-top: 9rem;
+  @media screen and (min-width: 1000px) {
+    padding-top: 6.3rem;
+  }
 
   &::before {
     position: absolute;
@@ -13,6 +16,10 @@ footer {
     left: 0;
     text-align: left;
     z-index: 0;
+
+    @media screen and (min-width: 1000px) {
+      content: url('../../images/bg-pattern-footer-desktop.svg');
+    }
   }
 
   .top {
@@ -24,10 +31,20 @@ footer {
     padding-bottom: 4rem;
     border-bottom: 1px solid $dark-grayish-violet;
 
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+    }
+
     .socials {
       margin-top: 3rem;
+      @media screen and (min-width: 1000px) {
+        margin-top: 1.4rem;
+      }
       img {
         margin: 0 0.6rem;
+
         &:hover {
           cursor: pointer;
         }
@@ -44,6 +61,14 @@ footer {
     font-weight: 700;
     font-size: 1.4rem;
     padding-top: 4rem;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: 1000px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: baseline;
+    }
 
     .links {
       margin-bottom: 2rem;

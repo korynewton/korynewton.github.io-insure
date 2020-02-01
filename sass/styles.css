@@ -746,6 +746,12 @@ footer {
   padding-top: 9rem;
 }
 
+@media screen and (min-width: 1000px) {
+  footer {
+    padding-top: 6.3rem;
+  }
+}
+
 footer::before {
   position: absolute;
   content: url("../../images/bg-pattern-footer-mobile.svg");
@@ -753,6 +759,12 @@ footer::before {
   left: 0;
   text-align: left;
   z-index: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  footer::before {
+    content: url("../../images/bg-pattern-footer-desktop.svg");
+  }
 }
 
 footer .top {
@@ -774,8 +786,27 @@ footer .top {
   border-bottom: 1px solid #837d87;
 }
 
+@media screen and (min-width: 1000px) {
+  footer .top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+}
+
 footer .top .socials {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  footer .top .socials {
+    margin-top: 1.4rem;
+  }
 }
 
 footer .top .socials img {
@@ -805,6 +836,23 @@ footer .bottom {
   font-weight: 700;
   font-size: 1.4rem;
   padding-top: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1000px) {
+  footer .bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 footer .bottom .links {
